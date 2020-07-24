@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'public',
+    loadChildren: () => import('./public/public.module').then( m => m.PublicPageModule)
+  },
   
 ];
 

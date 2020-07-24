@@ -10,16 +10,17 @@
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
+    <ion-toolbar class ="toolbar">
       <ion-title size="large">Keisatsu</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div>
-    <button class="public">Public</button>
-    <button class="police">Police</button>
+  <ion-card class="card" size-md="6" offset-md="3">
+    <div>
+      <a href="#" class="public">Public</a>
+      <a href="#" class="police">Police</a>
+      <a href="#" class="admin">Admin</a>
+    </div>
+  </ion-card>
   
-    <button class="admin">Admin</button>
-  </div>
 
 </ion-content>

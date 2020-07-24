@@ -1,5 +1,7 @@
 {
   "name": "keisatsu",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

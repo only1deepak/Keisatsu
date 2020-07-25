@@ -16,6 +16,7 @@ const routes: Routes =[
     path: 'public-appointment',
     loadChildren: () => import('./public-appointment/public-appointment.module').then( m => m.PublicAppointmentPageModule)
   },
+  {
     path: 'public-noc',
     loadChildren: () => import('./public-noc/public-noc.module').then( m => m.PublicNOCPageModule)
   },

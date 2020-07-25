@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { PublicPage } from './public.page';
+import { PublicHomePage } from './public-home.page';
 
-describe('PublicPage', () => {
-  let component: PublicPage;
-  let fixture: ComponentFixture<PublicPage>;
+describe('PublicHomePage', () => {
+  let component: PublicHomePage;
+  let fixture: ComponentFixture<PublicHomePage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PublicPage ],
+      declarations: [ PublicHomePage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PublicPage);
+    fixture = TestBed.createComponent(PublicHomePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

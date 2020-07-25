@@ -5,79 +5,38 @@
 </ion-header>
 
 <ion-content>
-  <form [formGroup]="registrationForm" (ngSubmit)="submit()">
-    <ion-list>
-      <ion-item>
-        <ion-label position="floating">Name</ion-label>
-      <ion-input formControlName="name" autocapitalize inputmode="text"></ion-input>
-      </ion-item>
-      <div *ngFor="let error of errorMessages.name">
-        <ng-container *ngIf="name.hasError(error.type) && (name.dirty || name.touched)">
-          <small class="error-message">{{error.message}}</small>
-        </ng-container>
-      </div>
-
-      <ion-item>
-        <ion-label position="floating">Phone</ion-label>
-      <ion-input formControlName="phone" inputmode="tel"></ion-input>
-      </ion-item>
-      <div *ngFor="let error of errorMessages.phone">
-        <ng-container *ngIf="phone.hasError(error.type) && (phone.dirty || phone.touched)">
-          <small class="error-message">{{error.message}}</small>
-        </ng-container>
-      </div>
-
-      <ion-item>
-        <ion-label position="floating">Email</ion-label>
-      <ion-input formControlName="email" inputmode="email"></ion-input>
-      </ion-item>
-      <div *ngFor="let error of errorMessages.email">
-          <ng-container *ngIf="email.hasError(error.type) && (email.dirty || email.touched)">
-            <small class="error-message">{{error.message}}</small>
-          </ng-container>
-        </div>
-    </ion-list>
-    <ion-list formGroupName="address">
-      <ion-list-header>
-        <ion-label>Address</ion-label>
-      </ion-list-header>
-
-      <ion-item>
-        <ion-label position="floating">City</ion-label>
-        <ion-input formControlName="city"></ion-input>
-      </ion-item>
-      <div *ngFor="let error of errorMessages.city">
-        <ng-container *ngIf="city.hasError(error.type) && (city.dirty || city.touched)">
-          <small class="error-message">{{error.message}}</small>
-        </ng-container>
-      </div>
-
-      <ion-item>
-        <ion-label position="floating">State</ion-label>
-        <ion-input formControlName="state"></ion-input>
-      </ion-item>
-      <div *ngFor="let error of errorMessages.state">
-        <ng-container *ngIf="state.hasError(error.type) && (state.dirty || state.touched)">
-          <small class="error-message">{{error.message}}</small>
-        </ng-container>
-      </div>
-
-
-      <ion-item>
-        <ion-label position="floating">Pin Code</ion-label>
-        <ion-input formControlName="pin"></ion-input>
-      </ion-item>
-      <div *ngFor="let error of errorMessages.pin">
-        <ng-container *ngIf="pin.hasError(error.type) && (pin.dirty || pin.touched)">
-          <small class="error-message">{{error.message}}</small>
-        </ng-container>
-      </div>
-
-
-      <ion-button [disabled]="!registrationForm.valid" type="submit" expand="block">
-        Submit
-        <ion-icon slot="end" name="create"></ion-icon>
-      </ion-button>
-    </ion-list>
-  </form>
+  <ion-card>
+    <ion-card-header colour="dark"><h1>Appointment Details</h1><br></ion-card-header>
+    <ion-card-content>
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Phone number</ion-label>
+    <ion-input type="tel"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+</ion-card-content>
+  </ion-card>
 </ion-content>
+<ion-card>
+  <ion-card-content>
+    <ion-item>
+      <ion-label position="floating">Date & Time of appointment</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label position="floating">Reason for appointment</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </ion-card-content>
+</ion-card>
+<div>
+  <ion-button color='success'shape="round" expand="full"><ion-icon name="create" slot="start"></ion-icon><h5>Submit</h5></ion-button>
+  
+  </div>

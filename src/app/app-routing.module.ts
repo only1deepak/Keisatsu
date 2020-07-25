@@ -5,6 +5,7 @@ const routes: Routes =[
   
   {
     path: '',
+<<<<<<< HEAD
     redirectTo: 'home',
     pathMatch: 'full'
   },
@@ -21,6 +22,20 @@ const routes: Routes =[
     path: 'public-noc',
     loadChildren: () => import('./public-noc/public-noc.module').then( m => m.PublicNOCPageModule)
   }
+=======
+    redirectTo: 'public-appointment',
+    pathMatch: 'full'
+  },
+
+  {
+    path: 'public-appointment',
+    loadChildren: () => import('./public-appointment/public-appointment.module').then( m => m.PublicAppointmentPageModule)
+  },
+
+  
+
+  
+>>>>>>> 9951d204136c6369d4704f0c241a05ae11438589
  ];
 
 @NgModule({

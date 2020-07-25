@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PublicPageRoutingModule } from './public-routing.module';
+import { PublicFIRPageRoutingModule } from './public-fir-routing.module';
 
-import { PublicPage } from './public.page';
+import { PublicFIRPage } from './public-fir.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PublicPageRoutingModule
+    PublicFIRPageRoutingModule
   ],
-  declarations: [PublicPage]
+  declarations: [PublicFIRPage]
 })
-export class PublicPageModule {}
+export class PublicFIRPageModule {}

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { PublicPage } from './public.page';
+import { PublicFIRPage } from './public-fir.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: PublicPage
+    component: PublicFIRPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class PublicPageRoutingModule {}
+export class PublicFIRPageRoutingModule {}

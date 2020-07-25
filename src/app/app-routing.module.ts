@@ -5,13 +5,18 @@ const routes: Routes =[
   
   {
     path: '',
-    redirectTo: 'public-fir',
+    redirectTo: 'public-noc',
     pathMatch: 'full'
   },
   {
     path: 'public-fir',
     loadChildren: () => import('./public-fir/public-fir.module').then( m => m.PublicFIRPageModule)
+  },
+  {
+    path: 'public-noc',
+    loadChildren: () => import('./public-noc/public-noc.module').then( m => m.PublicNOCPageModule)
   }
+
 
   
   

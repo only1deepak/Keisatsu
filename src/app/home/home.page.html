@@ -1,26 +1,35 @@
-
-
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Keisatsu
+<ion-header >
+  <ion-toolbar color="dark">
+    <ion-title color="medium">
+      Police Helper
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar class ="toolbar">
-      <ion-title size="large">Keisatsu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-card class="card" size-md="6" offset-md="3">
-    <div>
-      <a href="#" class="public">Public</a>
-      <a href="#" class="police">Police</a>
-      <a href="#" class="admin">Admin</a>
-    </div>
-  </ion-card>
+<ion-content >
+  <div>
+  <ion-grid>
+    <ion-row >
+      <ion-col>
+      <ion-button color='tertiary'shape="round" size="large" ><ion-icon name="person-sharp"slot="start"></ion-icon><h2>PUBLIC</h2></ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color='tertiary' shape="round" size="large"><ion-icon name="shield-sharp"slot="start"></ion-icon><h2>POLICE</h2></ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color='tertiary' shape="round" size="large"><ion-icon name="ribbon-sharp"slot="start"></ion-icon><h2>ADMIN</h2></ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </div>
   
-
+  
+  
+  
 </ion-content>
+
+
+

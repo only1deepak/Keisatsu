@@ -42,7 +42,11 @@ const routes: Routes =[
   {
     path: 'police-main',
     loadChildren: () => import('./police-main/police-main.module').then( m => m.PoliceMainPageModule)
+  },  {
+    path: 'admin-main',
+    loadChildren: () => import('./admin-main/admin-main.module').then( m => m.AdminMainPageModule)
   }
+
 ];
 
 @NgModule({

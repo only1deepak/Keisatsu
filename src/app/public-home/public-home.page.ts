@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActionSheetController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-public-home',
@@ -8,19 +9,17 @@ import { ActionSheetController } from '@ionic/angular';
 })
 export class PublicHomePage implements OnInit {
 
-  constructor(
-    private actionSheetCtrl: ActionSheetController
-  ) { }
+  constructor(private actionSheetCtrl: ActionSheetController, private router: Router) 
+  {}
 
   async showActionSheet(){
     await this.actionSheetCtrl.create({
       header: 'Choose your Action',
       buttons: [{
         text: 'Lodge FIR',
-        role: 'destructive',
         icon: 'bookmark',
         handler: () => {
-          console.log('FIR lodging');
+          this.router.navigateByUrl('/public-fir')
         }
       }, {
         text: 'Check FIR status',

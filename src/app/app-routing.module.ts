@@ -18,6 +18,10 @@ const routes: Routes =[
     loadChildren: () => import('./public-home/public-home.module').then( m => m.PublicHomePageModule)
   },
   {
+    path:'public-fir',
+    loadChildren: () => import('./public-fir/public-fir.module').then( m => m.PublicFIRPageModule)
+  },
+  {
     path: 'public-noc',
     loadChildren: () => import('./public-noc/public-noc.module').then( m => m.PublicNOCPageModule)
   },
@@ -25,7 +29,8 @@ const routes: Routes =[
   {
     path: 'public-appointment',
     loadChildren: () => import('./public-appointment/public-appointment.module').then( m => m.PublicAppointmentPageModule)
-  },  {
+  },
+  {
     path: 'police-auth',
     loadChildren: () => import('./police-auth/police-auth.module').then( m => m.PoliceAuthPageModule)
   },

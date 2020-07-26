@@ -25,7 +25,8 @@ const routes: Routes =[
   {
     path: 'public-appointment',
     loadChildren: () => import('./public-appointment/public-appointment.module').then( m => m.PublicAppointmentPageModule)
-  },  {
+  },
+  {
     path: 'police-auth',
     loadChildren: () => import('./police-auth/police-auth.module').then( m => m.PoliceAuthPageModule)
   },
@@ -33,12 +34,11 @@ const routes: Routes =[
     path: 'admin-auth',
     loadChildren: () => import('./admin-auth/admin-auth.module').then( m => m.AdminAuthPageModule)
   },
-
-
-  
-
-  
- ];
+  {
+    path: 'police-main',
+    loadChildren: () => import('./police-main/police-main.module').then( m => m.PoliceMainPageModule)
+  }
+];
 
 @NgModule({
   imports: [

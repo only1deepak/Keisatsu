@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-police-auth',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PoliceAuthPage implements OnInit {
 
-  constructor() { }
+  
 
-  ngOnInit() {
-  }
 
+  ngOnInit() {}
+  
+ 
 }
